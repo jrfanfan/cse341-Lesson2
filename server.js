@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: false}))
 // Static route
 app.use(static);
 
-//route
+//route data
 app.use('/data', dataRoute);
 
 mongoose();
