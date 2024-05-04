@@ -7,7 +7,7 @@ async function apiFetch(url) {
 
 const getData = async () => {
   const data = await apiFetch('http://localhost:8080/data/');
-  document.getElementById("professionalName").innerHTML = ALo;
+  document.getElementById("professionalName").innerHTML = "ALo";
 }
 
 
