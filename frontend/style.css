@@ -14,170 +14,75 @@ body {
   color: #eee;
   color: rgba(255, 255, 255, 0.85);
 }
-.container {
-  padding-top: 50px;
-}
-.flex-container {
-  font-size: 8px;
-}
-.content {
-  max-width: 43em;
-  padding: 10px;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 4.8em;
-  font-weight: 100;
-  text-transform: uppercase;
-  margin: 0;
-}
-h3 {
-  font-size: 2.4em;
-  font-weight: 300;
-  line-height: 1.5;
-}
-p,
-li {
-  font-size: 1.7em;
-}
-a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #fff;
-}
-a:hover {
-  text-decoration: underline;
-}
-.flex-container {
+.nav {
+  margin-top: -20px;
   width: 100%;
-  display: flex;
+  height: 60px;
+  background-color: #420dd3;
+  position:static;
+  display:block;
+  word-spacing: 10cqmax;
+  
 }
-.flex-child {
-  flex: 1;
-  text-align: center;
+.nav ul li {
+  list-style: none;
+  display: inline-flex;
+  padding-top: 12px;
+  margin-top: -2px;
+  
+  
 }
-p.pleft {
-  max-width: 20em;
-  float: left;
-  padding: 10px;
+#li1 {
+  font-size: 32px;
+  color: red;
 }
-p.pright {
-  max-width: 20em;
-  float: left;
-  padding: 10px;
+#li2  a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
 }
-ul {
-  clear: both;
+#li3 {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
+  padding-top: 23px;
+  position: fixed;
+  margin-left: 78px;
 }
 
-html {
-  font-size: 62.5%;
+p {
+  color: white;
+  margin-top: 100px;
 }
-body {
-  font-size: 1em;
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 70px;
+  margin-left: -370px;
 }
-.proName {
-  float: left;
-  margin-bottom: 20px;
+
+th {
+  border: 1px solid #fbfdfe;
+  background-color: #0873ad;
+  text-align: left;
+  padding: 2px;
+  
+ 
+}
+td{
+  border: 1px solid #fbfdfe;
+  background-color: #56b7eb;
+  text-align: left;
+  padding: 2px;
   font-size: 16px;
-}
-.subhead {
-  clear: both;
-}
-img {
-  width: 50%;
-}
-/* PYRAMID CODE */
-.stage {
-  -webkit-transform: scale(1.85);
-  transform: scale(0.85);
-  float: right;
-  margin-right: 120px;
-  margin-top: 30px;
-  width: 0px;
-  height: 0px;
-
-  position: relative;
-  -webkit-perspective: 1200px;
-  -webkit-perspective-origin: 50% 50%;
-  perspective: 1200px;
-  perspective-origin: 50% 50%;
-}
-.pyramid3d {
-  position: relative;
-  width: 150px;
-  height: 150px;
-
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateX(75deg) rotate(65deg);
-  transform: rotateX(75deg) rotate(65deg);
-  -webkit-animation: turnPyramid 10s linear infinite;
-  animation: turnPyramid 10s linear infinite;
-}
-.triangle {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  width: 0;
-  height: 0;
-  background: none;
-}
-.triangle:before {
-  content: '';
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-style: solid;
-  border-width: 176px 75px 0 75px;
-}
-.side1 {
-  -webkit-transform: translatex(0) rotatey(115.2deg) rotatez(90deg);
-  transform: translatex(0) rotatey(115.2deg) rotatez(90deg);
-}
-.side2 {
-  -webkit-transform: translatex(150px) rotatez(90deg) rotatex(64.8deg);
-  transform: translatex(150px) rotatez(90deg) rotatex(64.8deg);
-}
-.side3 {
-  -webkit-transform: translatez(0) rotatex(64.8deg);
-  transform: translatez(0) rotatex(64.8deg);
-}
-.side4 {
-  -webkit-transform: translatey(150px) rotatex(115.2deg);
-  transform: translatey(150px) rotatex(115.2deg);
-}
-.side1:before {
-  border-color: rgba(115, 115, 0, 0.3) transparent transparent transparent;
-}
-.side2:before {
-  border-color: rgba(20, 90, 225, 0.3) transparent transparent transparent;
-}
-.side3:before {
-  border-color: rgba(255, 0, 0, 0.3) transparent transparent transparent;
-}
-.side4:before {
-  border-color: rgba(0, 255, 255, 0.3) transparent transparent transparent;
+  word-spacing: normal;
+  font-weight: lighter;
 }
 
-@-webkit-keyframes turnPyramid {
-  100% {
-    -webkit-transform: rotateX(75deg) rotate(425deg);
-  }
-}
-@keyframes turnPyramid {
-  100% {
-    transform: rotateX(75deg) rotate(425deg);
-  }
-}
-
-@media (max-width: 300px) {
-  html {
-    font-size: 70%;
-  }
-  .stage {
-    -webkit-transform: scale(0.05);
-    transform: scale(0.05);
-  }
+tr:nth-child(even) {
+  background-color: #f4efef;
 }
 @media (max-width: 440px) {
   h1 {

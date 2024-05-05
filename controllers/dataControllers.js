@@ -15,7 +15,6 @@ const findData = async (req, res) => {
     try {
       const datas = await dataModels.find({});
       res.status(200).json(datas);
-      console.log(datas)
     } catch (error) {
       res.status(500).json({message: error.message})
     }
@@ -27,7 +26,6 @@ const findDataById = async (req, res) => {
       const {_id} = req.params;
       const data = await dataModels.findById(_id);
       res.status(200).json(data);
-      console.log(data);
     }catch (error) {
       console.log(error.message);
       res.status(500).json({message: error.message})
@@ -44,7 +42,6 @@ const updateDataById = async (req, res) => {
         return res.status(404).json({message: `cannot find any data with ID ${_id}`})
       }
       const updateData = await dataModels.findById(_id);
-      console.log(updateData);
       res.status(200).json(data);
     }
     catch (error) {
