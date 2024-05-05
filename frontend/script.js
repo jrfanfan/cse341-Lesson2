@@ -30,3 +30,11 @@ const getData = async () => {
   document.getElementById("li3").innerHTML= text;
 }
 
+const addData = async () => {
+  let grid;
+  grid = `<form>`
+
+  grid +=` </form>`
+}
+
+getData();
