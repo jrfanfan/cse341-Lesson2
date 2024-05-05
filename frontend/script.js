@@ -36,5 +36,3 @@ const addData = async () => {
 
   grid +=` </form>`
 }
-
-getData();
