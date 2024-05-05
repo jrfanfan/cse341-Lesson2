@@ -4,7 +4,7 @@ const env = require("dotenv").config()
 
 const DB_USERNAME = process.env.DB_USERNAME;
 const DB_PASSWORD = process.env.DB_PASSWORD;
-const URI = `mongodb+srv://userdb:userdb@cluster0.4dz6syt.mongodb.net/userDetail?retryWrites=true&w=majority&appName=Cluster0`;
+const URI = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.4dz6syt.mongodb.net/userDetail?retryWrites=true&w=majority&appName=Cluster0`;
 mongoose.connect(URI);
 
 const connection = (mongoose.connection, ()=> {
