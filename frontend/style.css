@@ -47,9 +47,14 @@ body {
   font-weight: 800;
   padding-top: 23px;
   position: fixed;
-  margin-left: 78px;
+  margin-left: 478px;
 }
-
+#li4 {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
+  padding-top: 23px;
+}
 p {
   color: white;
   margin-top: 100px;
@@ -60,7 +65,7 @@ table {
   border-collapse: collapse;
   width: 90%;
   margin-top: 70px;
-  margin-left: -370px;
+  margin-left: -900px;
 }
 
 th {
