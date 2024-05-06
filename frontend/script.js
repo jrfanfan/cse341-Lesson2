@@ -4,8 +4,10 @@ async function apiFetch(url) {
   const data = await response.json();
   return data;
 }
+
+
 const getData = async () => {
-  const data = await apiFetch('http://localhost:8080/data/');
+  const data = await apiFetch('http:/data/');
   let text = "";
   text = `<table>`
   text += `<tr>`
@@ -28,6 +30,7 @@ const getData = async () => {
   }
   text += `</table>`
   document.getElementById("li3").innerHTML= text;
+  
 }
 
 
