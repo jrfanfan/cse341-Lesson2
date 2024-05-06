@@ -4,6 +4,7 @@ const mongoose = require('./connectDB/connectMongoose')
 const dataRoute = require('./routes/dataRoutes')
 const static = require("./routes/static")
 
+
 const app = express()
 
 //Midleware

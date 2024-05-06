@@ -49,11 +49,17 @@ body {
   position: fixed;
   margin-left: 478px;
 }
+
 #li4 {
   text-decoration: none;
   color: aliceblue;
   font-weight: 800;
   padding-top: 23px;
+
+}
+#form1  input{
+  margin-top: 90px;
+  color: #141414;
 }
 p {
   color: white;
