@@ -14,20 +14,24 @@
     <ul>
         <li id="li1">CRUD</li>
         <li id="li2"><a href="/">Home</a></li>
-        <li id="li3" onclick="getData(this)">Data</li>
-        <li id="li4"><a href="/frontend/input.html">ADDdata</a></li>
+        <li id="li3" action="/" onclick="getData(this)">Data</li>
+        
         
     </ul>
     
 </nav>
 <body>
 <div>
-    <h2>HTML Forms</h2>
-    <form action="/action_page.php">
+    <h2>Add A Person</h2>
+    <form action="/">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="John"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="jdoe@gmail.com"><br>
+        <label for="idnumber">ID:</label><br>
+        <input type="numner" id="idnumber" name="idnumber" value="2314"><br><br>
         <input type="submit" value="Submit">
     </form> 
 

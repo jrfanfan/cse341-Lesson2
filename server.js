@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended: false}))
 
 // Static route
 app.use(static);
+app.use('/input', require('./routes/inputRoute'));
 
 //route data
 app.use('/data', dataRoute);

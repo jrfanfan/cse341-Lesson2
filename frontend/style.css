@@ -47,7 +47,7 @@ body {
   font-weight: 800;
   padding-top: 23px;
   position: fixed;
-  margin-left: 478px;
+  margin-left: 400px;
 }
 
 #li4 {
@@ -71,7 +71,7 @@ table {
   border-collapse: collapse;
   width: 90%;
   margin-top: 70px;
-  margin-left: -900px;
+  margin-left: 0;
 }
 
 th {
