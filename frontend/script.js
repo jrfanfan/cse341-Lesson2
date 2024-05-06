@@ -7,7 +7,7 @@ async function apiFetch(url) {
 
 
 const getData = async () => {
-  const data = await apiFetch('http:/data/');
+  const data = await apiFetch('/data/');
   let text = "";
   text = `<table>`
   text += `<tr>`
