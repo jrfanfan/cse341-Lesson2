@@ -30,4 +30,4 @@ const getData = async () => {
   document.getElementById("li3").innerHTML= text;
 }
 
-
+getData();
