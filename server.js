@@ -16,7 +16,7 @@ app.use(static);
 app.use('/input', require('./routes/inputRoute'));
 
 //route data
-app.use('/data', dataRoute);
+app.use('/', dataRoute);
 
 mongoose();
 
