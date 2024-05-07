@@ -13,8 +13,8 @@ const postData = async (req, res) => {
 //Route find data get
 const findData = async (req, res) => {
     try {
-      const datas = await dataModels.find({});
-      res.status(200).json(datas);
+      const data = await dataModels.find({});
+      res.status(200).json(data);
     } catch (error) {
       res.status(500).json({message: error.message})
     }
@@ -23,8 +23,8 @@ const findData = async (req, res) => {
 //Route get data by id
 const findDataById = async (req, res) => {
     try {
-      const {_id} = req.params;
-      const data = await dataModels.findById(_id);
+      const {id} = req.params;
+      const data = await dataModels.findById(id);
       res.status(200).json(data);
     }catch (error) {
       console.log(error.message);
@@ -35,13 +35,13 @@ const findDataById = async (req, res) => {
 //Route to update data
 const updateDataById = async (req, res) => {
     try {
-      const {_id} = req.params;
-      const data = await dataModels.findByIdAndUpdate(_id, req.body)
+      const {id} = req.params;
+      const data = await dataModels.findByIdAndUpdate(id, req.body)
       //We can find any data
       if (!data) {
-        return res.status(404).json({message: `cannot find any data with ID ${_id}`})
+        return res.status(404).json({message: `cannot find any data with ID ${id}`})
       }
-      const updateData = await dataModels.findById(_id);
+      const updateData = await dataModels.findById(id);
       res.status(200).json(data);
     }
     catch (error) {
@@ -52,11 +52,11 @@ const updateDataById = async (req, res) => {
 // Route to delete data by id
 const deleteDataById = async (req, res) => {
     try {
-      const {_id} = req.params;
-      const data = await dataModels.findByIdAndDelete(_id);
+      const {id} = req.params;
+      const data = await dataModels.findByIdAndDelete(id);
       //We can find any data
       if (!data) {
-        return res.status(404).json({message: `cannot find any data with ID ${_id}`})
+        return res.status(404).json({message: `cannot find any data with ID ${id}`})
       }
       res.status(200).json(data);
   

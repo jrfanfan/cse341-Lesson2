@@ -33,4 +33,8 @@ const getData = async () => {
   
 }
 
-
+// reset my form
+function submit_form() {
+  document.form1.submit();
+  document.form1.reset(); 
+  }

@@ -56,9 +56,8 @@ body {
   font-weight: 800;
   
 }
-#form1  input{
-  margin-top: 90px;
-  color: #141414;
+.input {
+  margin-left: 35px;
 }
 p {
   color: white;
