@@ -21,7 +21,7 @@ body {
   background-color: #420dd3;
   position:static;
   display:block;
-  word-spacing: 10cqmax;
+  word-spacing: 7cqmax;
   
 }
 .nav ul li {
@@ -47,9 +47,16 @@ body {
   font-weight: 800;
   padding-top: 23px;
   position: fixed;
-  margin-left: 400px;
+  margin-left: 650px;
 }
 
+#li5, #li6 {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
+  padding-top: 23px;
+
+}
 #li4 a {
   text-decoration: none;
   color:aliceblue;
@@ -58,6 +65,12 @@ body {
 }
 .input {
   margin-left: 35px;
+}
+.input #aPerson table{
+  margin-left: 280px;
+  position: absolute;
+  margin-top: -0px;
+  width: 800px;
 }
 p {
   color: white;
@@ -89,7 +102,10 @@ td{
   word-spacing: normal;
   font-weight: lighter;
 }
-
+#data1, #data2, #data3{
+  margin-top: -25px;
+  margin-left: 50px;
+}
 tr:nth-child(even) {
   background-color: #f4efef;
 }

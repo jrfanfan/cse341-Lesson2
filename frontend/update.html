@@ -8,19 +8,18 @@
     <title>API rest</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
 </head>
 <nav class="nav">
     <ul>
         <li id="li1">CRUD</li>
         <li id="li2"><a href="/">Home</a></li>
-        
     </ul>
 </nav>
 <body>
     <div class="input">
-        <h2>Add A Person</h2>
-        <form name="form1"  action="/data" method="post">
+        <h2>Update A Person</h2>
+        <form name="form1"  action="/data/id" method="post" target="_blank">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="firstname" value="" autofocus required><br>
             <label for="lname">Last name:</label><br>
@@ -31,6 +30,7 @@
             <input type="numner" id="idnumber" name="idnumber" value="" required><br><br>
             <input type="submit" value="Submit" onclick="submit_form();">
         </form> 
+        <p id="demo"></p>
     </div>
 </body>
 </html>
