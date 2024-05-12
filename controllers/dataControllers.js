@@ -43,11 +43,6 @@ const findDataById = async (req, res) => {
 const updateDataById = async (req, res) => {
   try {
     const {id} = req.params;
-    const data = await dataModels.findByIdAndUpdate(id, req.body)
-    //We can find any data
-    if (!data) {
-      return res.status(404).json({message: `cannot find any data with ID ${id}`})
-    }
     const updateData = await dataModels.findByIdAndUpdate(id);
     res.status(204).json(updateData);
   }

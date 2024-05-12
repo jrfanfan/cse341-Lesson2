@@ -1,7 +1,4 @@
 // route to delete dada by id
-DELETE http://localhost:8080/datadel/663fb579026415209b7b3448  HTTP/1.1
+PUT http://localhost:8080/datu/663fb579026415209b7b3448  HTTP/1.1
 
 
-// route to get data
-
-GET http://localhost:8080/data HTTP/1.1
