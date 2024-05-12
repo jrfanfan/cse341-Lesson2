@@ -31,6 +31,7 @@ const getData = async () => {
   document.getElementById("data1").innerHTML= text;
   
 }
+let fname = []
 
 const updateData = async () => {
   const data = await apiFetch('/data');
@@ -45,16 +46,21 @@ const updateData = async () => {
   text +=`</tr>`
   for (let i = 0; i < data.length; i++) {
     text += `<tr>`
-    text += `<td>` + data[i].firstname  
+    text += `<td>`
+    text += `<input type="text" value="${data[i].firstname}" required>` 
     text += `</td>` 
-    text += `<td>` + data[i].lastname
+    text += `<td>`
+    text += `<input type="text" value="${data[i].lastname}" required>`
     text += `</td>` 
-    text += `<td>` + data[i].email 
+    text += `<td>`
+    text += `<input type="text" value="${data[i].email}" required>` 
     text += `</td>` 
-    text += `<td>` + data[i].idnumber 
+    text += `<td>`
+    text += `<input type="Number" value="${data[i].idnumber}" required>` 
     text += `</td>` 
-    text += `<td><a href="/update.html">Update</a></td>`   
+    text += `<td><a href="/dataput/${data[i]._id}" >Update</a></td>`   
     text += `</tr>`  
+    
   }
   text += `</table>`
   document.getElementById("data2").innerHTML= text;
@@ -90,16 +96,9 @@ const deleteData = async () => {
   document.getElementById("data2").innerHTML= text;
 }
 
-
 // reset my form
 function submit_form() {
   document.form1.submit();
   document.form1.reset(); 
   }
-
-
-
-    
-
-
 

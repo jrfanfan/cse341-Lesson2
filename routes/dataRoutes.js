@@ -12,10 +12,11 @@ router.get('/data', dataControllers.findData);
 router.get('/data/:id', dataControllers.findDataById);
 
 //Route update data by id
-router.put('/dataput/:id', dataControllers.updateDataById);
+router.get('/dataput/:id', dataControllers.updateDataById);
 
 // Delete data by id
-router.delete('/datadel/:id', dataControllers.deleteDataById);
+router.get('/datadel/:id', dataControllers.deleteDataById);
+
 
 
 module.exports= router;

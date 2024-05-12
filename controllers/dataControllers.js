@@ -48,8 +48,8 @@ const updateDataById = async (req, res) => {
     if (!data) {
       return res.status(404).json({message: `cannot find any data with ID ${id}`})
     }
-    const updateData = await dataModels.findById(id);
-    res.status(200).json(data);
+    const updateData = await dataModels.findByIdAndUpdate(id);
+    res.status(204).json(updateData);
   }
   catch (error) {
     console.log(error.message);
@@ -61,13 +61,12 @@ const updateDataById = async (req, res) => {
 const deleteDataById = async (req, res) => {
   try {
     const {id} = req.params;
-    const db = await dataModels.findByIdAndDelete(id);
-    db.orders.deleteOne( { _id: ObjectId(id) } );
-   } catch (error) {
+    data = await dataModels.findByIdAndDelete(id);
+    res.status(200).json('This name: ' + data.firstname + " " +  data.lastname + " had removed from the databases");
+  } catch (error) {
     console.log(error.message);
     res.status(500).json({message: error.message})
-
-   }
+  }
 }
 
 
