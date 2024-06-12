@@ -43,7 +43,9 @@ const findDataById = async (req, res) => {
 const updateDataById = async (req, res) => {
   try {
     const {id} = req.params;
-    const updateData = await dataModels.findByIdAndUpdate(id);
+    const updateData = await dataModels.findByIdAndUpdate(id,
+      {firstname: "test"},
+    );
     res.status(204).json(updateData);
   }
   catch (error) {

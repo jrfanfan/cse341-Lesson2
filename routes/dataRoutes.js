@@ -14,7 +14,6 @@ router.get('/data/:id', dataControllers.findDataById);
 //Route update data by id
 router.put('/dataput/:id', dataControllers.updateDataById);
 
-
 // Delete data by id
 router.get('/datadel/:id', dataControllers.deleteDataById);
 

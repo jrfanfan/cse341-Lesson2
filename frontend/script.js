@@ -31,7 +31,6 @@ const getData = async () => {
   document.getElementById("data1").innerHTML= text;
   
 }
-let fname = []
 
 const updateData = async () => {
   const data = await apiFetch('/data');
